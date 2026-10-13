@@ -8,50 +8,59 @@
    -------------------------------------------------------------------------- */
 :root {
     /* Color Palette */
-    --color-primary: #0f172a;       /* Deep Navy / Slate */
-    --color-primary-light: #1e293b; /* Medium Slate */
-    --color-primary-dark: #090d16;  /* Deepest Navy */
-    
-    --color-accent: #f59e0b;        /* Safety Gold / Industrial Amber */
-    --color-accent-hover: #d97706;  /* Darker Gold */
-    --color-accent-light: #fef3c7;  /* Soft Warm Amber */
-    
-    --color-secondary: #0284c7;     /* Ocean / Industrial Blue */
+    --color-primary: #0f172a;
+    /* Deep Navy / Slate */
+    --color-primary-light: #1e293b;
+    /* Medium Slate */
+    --color-primary-dark: #090d16;
+    /* Deepest Navy */
+
+    --color-accent: #f59e0b;
+    /* Safety Gold / Industrial Amber */
+    --color-accent-hover: #d97706;
+    /* Darker Gold */
+    --color-accent-light: #fef3c7;
+    /* Soft Warm Amber */
+
+    --color-secondary: #0284c7;
+    /* Ocean / Industrial Blue */
     --color-secondary-hover: #0369a1;
-    
-    --color-success: #10b981;       /* Safety Green */
-    --color-whatsapp: #25d366;      /* WhatsApp Green */
+
+    --color-success: #10b981;
+    /* Safety Green */
+    --color-whatsapp: #25d366;
+    /* WhatsApp Green */
     --color-whatsapp-hover: #20bd5a;
-    
+
     /* Neutrals */
     --color-bg: #f8fafc;
     --color-surface: #ffffff;
     --color-surface-alt: #f1f5f9;
     --color-border: #e2e8f0;
     --color-border-focus: #cbd5e1;
-    
+
     /* Typography Colors */
     --color-text-main: #0f172a;
     --color-text-muted: #64748b;
     --color-text-light: #94a3b8;
     --color-text-white: #ffffff;
-    
+
     /* Typography */
     --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
     --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
     --shadow-glow: 0 0 25px rgba(245, 158, 11, 0.35);
-    
+
     /* Transitions */
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    
+
     /* Layout */
     --max-width: 1240px;
     --radius-sm: 6px;
@@ -63,7 +72,9 @@
 /* --------------------------------------------------------------------------
    2. Reset & Base Styles
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -99,7 +110,10 @@ ul {
     list-style: none;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
     font-family: inherit;
     font-size: inherit;
     border: none;
@@ -291,13 +305,15 @@ button, input, select, textarea {
     padding-bottom: 8px;
 }
 
-.top-bar-left, .top-bar-right {
+.top-bar-left,
+.top-bar-right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.info-item, .top-contact-link {
+.info-item,
+.top-contact-link {
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -406,11 +422,13 @@ button, input, select, textarea {
     transition: width var(--transition-base);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--color-accent-hover);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -485,12 +503,10 @@ button, input, select, textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        135deg,
-        rgba(15, 23, 42, 0.92) 0%,
-        rgba(15, 23, 42, 0.75) 50%,
-        rgba(15, 23, 42, 0.88) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(15, 23, 42, 0.9) 0%,
+            rgba(15, 23, 42, 0.5) 50%,
+            rgba(15, 23, 42, 0.9) 100%);
     z-index: 2;
 }
 
@@ -532,9 +548,20 @@ button, input, select, textarea {
 }
 
 @keyframes pulse {
-    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
-    70% { transform: scale(1.1); box-shadow: 0 0 0 8px rgba(245, 158, 11, 0); }
-    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+    }
+
+    70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgba(245, 158, 11, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+    }
 }
 
 .hero-title {
@@ -951,7 +978,8 @@ button, input, select, textarea {
     border: 1px solid var(--color-border);
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
     background-color: var(--color-primary);
     color: #ffffff;
     border-color: var(--color-primary);
@@ -1618,7 +1646,8 @@ button, input, select, textarea {
     gap: 11px;
 }
 
-.footer-links a, .footer-links span {
+.footer-links a,
+.footer-links span {
     font-size: 0.9rem;
     color: #94a3b8;
     transition: color var(--transition-fast);
@@ -1788,8 +1817,15 @@ button, input, select, textarea {
 }
 
 @keyframes floatBounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
 
 .toast {
@@ -1824,16 +1860,18 @@ button, input, select, textarea {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .hero-title {
         font-size: 2.8rem;
     }
-    
-    .about-grid, .workshop-grid, .contact-grid {
+
+    .about-grid,
+    .workshop-grid,
+    .contact-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .about-images-wrapper {
         max-width: 600px;
         margin: 0 auto 30px;
@@ -1844,11 +1882,11 @@ button, input, select, textarea {
     .desktop-only {
         display: none !important;
     }
-    
+
     .mobile-toggle {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 78px;
@@ -1863,64 +1901,66 @@ button, input, select, textarea {
         visibility: hidden;
         transition: all var(--transition-base);
     }
-    
+
     .nav-menu.active {
         transform: translateY(0);
         opacity: 1;
         visibility: visible;
     }
-    
+
     .nav-menu ul {
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
     }
-    
+
     .hero-title {
         font-size: 2.2rem;
     }
-    
+
     .hero-description {
         font-size: 1rem;
     }
-    
+
     .hero-stats-container {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .stat-divider {
         display: none;
     }
-    
+
     .section-title {
         font-size: 1.85rem;
     }
-    
+
     .form-row {
         grid-template-columns: 1fr;
     }
-    
-    .services-grid, .equipment-grid, .industries-grid {
+
+    .services-grid,
+    .equipment-grid,
+    .industries-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         gap: 14px;
         text-align: center;
     }
-    
+
     .about-sub-image-container {
         position: static;
         width: 100%;
         margin-top: 16px;
     }
-    
+
     .floating-whatsapp {
         bottom: 20px;
         right: 20px;
