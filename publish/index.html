@@ -4,132 +4,1061 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Tamam Equipment Rental</title>
+    <title>Al Tamam Equipment Rental | Power Generation & Heavy Equipment Rental UAE</title>
+    <meta name="description" content="Al Tamam Equipment Rental provides premier temporary power generation, diesel generators (20 kVA - 2000 kVA), industrial air compressors, mobile lighting towers, and heavy logistics across Dubai, Abu Dhabi, and the UAE.">
+    <meta name="keywords" content="Equipment Rental UAE, Diesel Generator Rental Dubai, Portacabin Rental, Air Compressor Rental, Lighting Tower Rental, Power Solutions UAE, Al Tamam">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">LOGO</div>
-            <nav>
+    <!-- Top Information Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-left">
+                <span class="info-item">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    Serving Dubai, Abu Dhabi, Sharjah & All UAE Emirates
+                </span>
+                <span class="info-item desktop-only">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 nominal 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                    24/7 Operations & Rapid Emergency Response
+                </span>
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:+971501234567" class="top-contact-link">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    24/7 Support: +971 50 123 4567
+                </a>
+                <a href="mailto:info@altamamrental.com" class="top-contact-link desktop-only">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    info@altamamrental.com
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#" class="brand-logo" aria-label="Al Tamam Equipment Rental Home">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" width="28" height="28" fill="#F59E0B">
+                        <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">AL TAMAM</span>
+                    <span class="logo-subtitle">EQUIPMENT RENTAL</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Equipment</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#equipment" class="nav-link">Fleet & Equipment</a></li>
+                    <li><a href="#industries" class="nav-link">Industries</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-buttons">
-                <button class="quote-button">Get a Quote</button>
-                <button class="phone-button">Phone</button>
+
+            <div class="header-actions">
+                <button class="btn btn-primary open-quote-btn" id="headerQuoteBtn">Get a Quote</button>
+                <a href="tel:+971501234567" class="btn btn-outline desktop-only">Call Now</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-background">
-            <div class="hero-background-image active"></div>
-            <div class="hero-background-image"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <h1>Equipment Rental</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-                <button class="hero-button">Explore More</button>
+    <main>
+        <!-- Hero Section with Background Slider -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="hero-background-image active"></div>
+                <div class="hero-background-image"></div>
             </div>
-        </div>
-    </section>
+            <div class="hero-overlay"></div>
 
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <h3>Service 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <h3>Service 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-item">
-                    <div class="service-icon"></div>
-                    <h3>Service 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> UAE's Premier Power & Machinery Rental Partner
+                    </div>
+                    <h1 class="hero-title" id="heroTitle">
+                        Reliable Heavy Equipment & Temporary Power Solutions
+                    </h1>
+                    <p class="hero-description" id="heroDesc">
+                        Supplying heavy-duty soundproof diesel generators (20 kVA to 2000 kVA), industrial air compressors, mobile tower lights, and complete site logistics across the UAE with 24/7 technical field support.
+                    </p>
 
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image"></div>
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button class="about-button">Read More</button>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large open-quote-btn">Request Instant Quote</button>
+                        <a href="#equipment" class="btn btn-secondary btn-large">Explore Fleet</a>
+                        <a href="https://wa.me/971501234567" target="_blank" class="btn btn-whatsapp btn-large">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.192 8.192 0 0 1-5.82 2.41c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.11.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
+                            WhatsApp Us
+                        </a>
+                    </div>
+
+                    <!-- Slide Navigation Indicator Dots -->
+                    <div class="slider-controls">
+                        <span class="slide-indicator active" data-index="0"></span>
+                        <span class="slide-indicator" data-index="1"></span>
+                        <span class="slide-indicator" data-index="2"></span>
+                        <span class="slide-indicator" data-index="3"></span>
+                        <span class="slide-indicator" data-index="4"></span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="equipment">
-        <div class="container">
-            <h2>Our Equipment</h2>
-            <div class="equipment-grid">
-                <div class="equipment-item">
-                    <div class="equipment-image"></div>
-                    <h3>Equipment 1</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Rent Now</button>
-                </div>
-                <div class="equipment-item">
-                    <div class="equipment-image"></div>
-                    <h3>Equipment 2</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Rent Now</button>
-                </div>
-                <div class="equipment-item">
-                    <div class="equipment-image"></div>
-                    <h3>Equipment 3</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Rent Now</button>
-                </div>
-                <div class="equipment-item">
-                    <div class="equipment-image"></div>
-                    <h3>Equipment 4</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Rent Now</button>
-                </div>
-                <div class="equipment-item">
-                    <div class="equipment-image"></div>
-                    <h3>Equipment 5</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Rent Now</button>
-                </div>
-                <div class="equipment-item">
-                    <div class="equipment-image"></div>
-                    <h3>Equipment 6</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <button>Rent Now</button>
+            <!-- Highlights Bar -->
+            <div class="hero-stats-bar">
+                <div class="container hero-stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Machinery & Power Units</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Years UAE Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Emergency Mobile Field Crew</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.8%</span>
+                        <span class="stat-label">Uptime Reliability Guarantee</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Al Tamam Equipment Rental. All rights reserved.</p>
+        <!-- About Us Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-images-wrapper">
+                        <div class="about-main-image-container">
+                            <img src="images/image_1.jpg" alt="Al Tamam expert engineering team and fleet of generators in UAE" class="about-img-main" loading="lazy">
+                            <div class="about-badge-floating">
+                                <span class="badge-number">15+</span>
+                                <span class="badge-text">Years of Trusted UAE Operations</span>
+                            </div>
+                        </div>
+                        <div class="about-sub-image-container">
+                            <img src="images/image_4.jpg" alt="Al Tamam certified technicians calibrating generator controller" class="about-img-sub" loading="lazy">
+                            <div class="about-sub-caption">
+                                <strong>Certified In-House Diagnostics</strong>
+                                <span>Perkins, Cummins & Leroy Somer Specialists</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text-content">
+                        <div class="section-tag">ABOUT AL TAMAM</div>
+                        <h2 class="section-title">Your Dedicated Equipment Rental & Temporary Power Partner in the UAE</h2>
+                        <p class="lead-text">
+                            Al Tamam Equipment Rental has grown to become one of the UAE’s most dependable providers of temporary power generation, heavy machinery, and industrial site support solutions.
+                        </p>
+                        <p>
+                            Serving infrastructure contractors, oil & gas installations, marine shipyards, industrial manufacturers, and major entertainment events, we maintain an ever-growing inventory of modern, fuel-efficient equipment engineered to endure demanding Middle Eastern climate conditions.
+                        </p>
+                        <p>
+                            We do not simply supply machinery—we provide complete, turnkey site execution. From initial power requirement sizing and certified crane offloading to fuel management, synchronization, and round-the-clock on-site maintenance, our dedicated engineering team ensures your project runs without disruption.
+                        </p>
+
+                        <div class="about-features-list">
+                            <div class="about-feature">
+                                <div class="feature-icon-box">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>100% Load-Tested Fleet</h4>
+                                    <p>Every generator and compressor undergoes full-load testing prior to mobilization.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon-box">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Rapid 2-Hour Emergency Dispatch</h4>
+                                    <p>Strategically deployed mobile workshop units across Dubai, Abu Dhabi, and Northern Emirates.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <div class="feature-icon-box">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Full Turnkey Fuel & Logistics</h4>
+                                    <p>In-house boom crane transport, auxiliary fuel storage tanks, and automated diesel top-ups.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-cta-row">
+                            <button class="btn btn-primary open-quote-btn">Get Equipment Quote</button>
+                            <a href="#services" class="btn btn-outline">Explore Our Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">WHAT WE OFFER</div>
+                    <h2 class="section-title">Comprehensive Equipment & Facility Rental Services</h2>
+                    <p class="section-subtitle">
+                        Engineered solutions tailored to construction, oilfield, marine, and commercial operations across the UAE.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Power Generation -->
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                            </div>
+                            <span class="service-tag">Core Specialty</span>
+                        </div>
+                        <h3>Temporary Power Generation</h3>
+                        <p>
+                            From compact 20 kVA mobile units to multi-megawatt synchronized power packages up to 2000 kVA. Acoustically treated, super-silent enclosures suitable for residential zones and remote sites.
+                        </p>
+                        <ul class="service-points">
+                            <li>20 kVA – 2000 kVA Perkins / Cummins Diesel Generators</li>
+                            <li>Auto-Mains Failure (AMF) & Auto-Synchronizing Panels</li>
+                            <li>Distribution Boards, Breakers & Heavy-Duty Rubber Cables</li>
+                        </ul>
+                        <button class="service-btn open-quote-btn" data-service="Power Generation">Request Power Rental &rarr;</button>
+                    </div>
+
+                    <!-- Service 2: Air Compressors -->
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+                            </div>
+                            <span class="service-tag">Industrial Air</span>
+                        </div>
+                        <h3>Industrial Air Compressors</h3>
+                        <p>
+                            High-volume, heavy-duty portable diesel compressors engineered for continuous pneumatic duty, shotcreting, sandblasting, pipeline pressure testing, and heavy industrial plant maintenance.
+                        </p>
+                        <ul class="service-points">
+                            <li>185 CFM to 900+ CFM High-Pressure Diesel Compressors</li>
+                            <li>Rig-safe spark arrestors & Chalwyn valves available</li>
+                            <li>Complete air hoses, manifolds, and pneumatic tool kits</li>
+                        </ul>
+                        <button class="service-btn open-quote-btn" data-service="Air Compressors">Request Compressor &rarr;</button>
+                    </div>
+
+                    <!-- Service 3: Mobile Lighting Towers -->
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A5.006 5.006 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/></svg>
+                            </div>
+                            <span class="service-tag">Night Operations</span>
+                        </div>
+                        <h3>Mobile Lighting Towers</h3>
+                        <p>
+                            High-output mobile floodlight and LED lighting towers with 9-meter hydraulic or manual masts. Ideal for round-the-clock road construction, concrete pours, security perimeters, and outdoor events.
+                        </p>
+                        <ul class="service-points">
+                            <li>4 x 350W High-Efficiency LED & 4 x 1000W Metal Halide</li>
+                            <li>360-degree rotation mast with up to 9m elevation</li>
+                            <li>Ultra-quiet diesel engines with 60+ hour runtime</li>
+                        </ul>
+                        <button class="service-btn open-quote-btn" data-service="Lighting Towers">Request Lighting &rarr;</button>
+                    </div>
+
+                    <!-- Service 4: Logistics & Crane Offloading -->
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                            </div>
+                            <span class="service-tag">Turnkey Transport</span>
+                        </div>
+                        <h3>Heavy Logistics & Boom Cranes</h3>
+                        <p>
+                            Our dedicated fleet of crane-mounted boom trucks and low-bed trailers provides seamless transport, certified crane offloading, elevated placement, and precise positioning across challenging job sites.
+                        </p>
+                        <ul class="service-points">
+                            <li>Telescopic boom cranes (Mitsubishi Fuso / UNIC)</li>
+                            <li>Certified rigging equipment, slings, and lifting crew</li>
+                            <li>UAE-wide rapid mobilization directly to your project location</li>
+                        </ul>
+                        <button class="service-btn open-quote-btn" data-service="Logistics & Crane Transport">Inquire Logistics &rarr;</button>
+                    </div>
+
+                    <!-- Service 5: Fuel Management -->
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M19.77 7.23l.01-.01-3.72-3.72L15 4.56l2.11 2.11c-.94.36-1.61 1.26-1.61 2.33 0 1.38 1.12 2.5 2.5 2.5.36 0 .69-.08 1-.21v7.21c0 .55-.45 1-1 1s-1-.45-1-1V14c0-1.1-.9-2-2-2h-1V5c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v16h10v-7.5h1.5v5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5V9c0-.69-.28-1.32-.73-1.77zM12 10H6V5h6v5zm6 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+                            </div>
+                            <span class="service-tag">Site Support</span>
+                        </div>
+                        <h3>Fuel Management & Auxiliary Tanks</h3>
+                        <p>
+                            Keep your power running non-stop with our turnkey fuel support. We supply certified double-bunded external fuel storage tanks and coordinate timely diesel deliveries with automated monitoring.
+                        </p>
+                        <ul class="service-points">
+                            <li>1,000L to 10,000L Double-Walled Cylindrical Fuel Tanks</li>
+                            <li>External fuel transfer pumps and high-grade safety hoses</li>
+                            <li>Scheduled emergency diesel refueling across UAE</li>
+                        </ul>
+                        <button class="service-btn open-quote-btn" data-service="Fuel Management">Order Fuel Support &rarr;</button>
+                    </div>
+
+                    <!-- Service 6: Overhaul & 24/7 Field Maintenance -->
+                    <div class="service-card">
+                        <div class="service-card-header">
+                            <div class="service-icon-wrapper">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+                            </div>
+                            <span class="service-tag">Guaranteed Uptime</span>
+                        </div>
+                        <h3>Workshop & 24/7 Field Support</h3>
+                        <p>
+                            Backed by an advanced in-house overhaul workshop and mobile rapid-response vans equipped with OEM replacement parts, electronic diagnostic laptops, and certified diesel engine technicians.
+                        </p>
+                        <ul class="service-points">
+                            <li>Preventative scheduled servicing every 250 operating hours</li>
+                            <li>Comprehensive top-end & complete engine overhauls</li>
+                            <li>24/7 emergency breakdown standby dispatch team</li>
+                        </ul>
+                        <button class="service-btn open-quote-btn" data-service="Technical Support">Contact Technical Team &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipment Fleet Showcase Section -->
+        <section class="equipment" id="equipment">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">OUR FLEET</div>
+                    <h2 class="section-title">Featured Machinery & Rental Fleet</h2>
+                    <p class="section-subtitle">
+                        Inspect our certified equipment inventory maintained to original OEM specifications. Click any unit to view technical specifications.
+                    </p>
+
+                    <!-- Category Filters -->
+                    <div class="equipment-filters">
+                        <button class="filter-btn active" data-filter="all">All Fleet</button>
+                        <button class="filter-btn" data-filter="generators">Generators</button>
+                        <button class="filter-btn" data-filter="logistics">Logistics & Cranes</button>
+                        <button class="filter-btn" data-filter="overhaul">Engine Overhaul</button>
+                        <button class="filter-btn" data-filter="diagnostics">Diagnostics</button>
+                    </div>
+                </div>
+
+                <div class="equipment-grid">
+                    <!-- Unit 1: Silent Generator T 148 -->
+                    <div class="equipment-card" data-category="generators">
+                        <div class="equipment-img-container">
+                            <img src="images/image_6.jpg" alt="Al Tamam heavy-duty soundproof diesel generator unit T 148" class="equipment-img" loading="lazy">
+                            <span class="equipment-badge">Silent Canopy</span>
+                        </div>
+                        <div class="equipment-body">
+                            <div class="equipment-category">Diesel Generators</div>
+                            <h3 class="equipment-title">Heavy-Duty Acoustic Generator (T-148)</h3>
+                            <p class="equipment-desc">
+                                Premium weather-resistant, sound-attenuated acoustic canopy generator designed for high-ambient Middle East heat. Equipped with Leroy Somer alternator and digital control interface.
+                            </p>
+                            <div class="equipment-specs-grid">
+                                <div class="spec-chip"><strong>Capacity:</strong> 500 kVA Prime</div>
+                                <div class="spec-chip"><strong>Voltage:</strong> 400V / 230V</div>
+                                <div class="spec-chip"><strong>Frequency:</strong> 50 Hz</div>
+                                <div class="spec-chip"><strong>Noise Level:</strong> 68 dBA @ 7m</div>
+                            </div>
+                            <div class="equipment-actions">
+                                <button class="btn btn-primary btn-block open-quote-btn" data-equipment="Soundproof Generator T-148 (500 kVA)">Rent This Unit</button>
+                                <button class="btn btn-outline-sm view-spec-btn" data-title="Heavy-Duty Acoustic Generator (T-148)" data-spec="Capacity: 500 kVA Prime / 550 kVA Standby&#10;Alternator: Leroy Somer 4-Pole Brushless&#10;Engine: Heavy-Duty Water-Cooled Turbo Diesel&#10;Noise: Super-Silent 68 dBA @ 7m&#10;Fuel Capacity: 1000L Integrated Base Tank&#10;Autonomy: 14+ Hours at 75% load">Specs</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unit 2: Industrial Canopy Power System -->
+                    <div class="equipment-card" data-category="generators">
+                        <div class="equipment-img-container">
+                            <img src="images/image_3.jpg" alt="Internal view of Al Tamam heavy diesel engine and Leroy Somer alternator" class="equipment-img" loading="lazy">
+                            <span class="equipment-badge">Continuous Duty</span>
+                        </div>
+                        <div class="equipment-body">
+                            <div class="equipment-category">Diesel Generators</div>
+                            <h3 class="equipment-title">High-Capacity Industrial Power Unit</h3>
+                            <p class="equipment-desc">
+                                Heavy turbocharged multi-cylinder diesel engine with heavy-duty air filtration, dual oil filters, and high-ambient tropicalized radiator for continuous oilfield and construction duty.
+                            </p>
+                            <div class="equipment-specs-grid">
+                                <div class="spec-chip"><strong>Capacity:</strong> 800 – 1250 kVA</div>
+                                <div class="spec-chip"><strong>Cooling:</strong> 50°C Tropical</div>
+                                <div class="spec-chip"><strong>Control:</strong> Deep Sea Auto</div>
+                                <div class="spec-chip"><strong>Emission:</strong> Tier-compliant</div>
+                            </div>
+                            <div class="equipment-actions">
+                                <button class="btn btn-primary btn-block open-quote-btn" data-equipment="High-Capacity Industrial Power Unit (800-1250 kVA)">Rent This Unit</button>
+                                <button class="btn btn-outline-sm view-spec-btn" data-title="High-Capacity Industrial Power Unit" data-spec="Rating: 800 kVA - 1250 kVA Synchronizable&#10;Engine: Turbocharged & Aftercooled Diesel&#10;Radiator: Heavy Duty Industrial 50°C Ambient Rated&#10;Protection: Low Oil Pressure, High Temp, Over-crank&#10;Fuel: Dual Racor Water-Separator Filters">Specs</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unit 3: Mobile Crane & Transport Fleet -->
+                    <div class="equipment-card" data-category="logistics">
+                        <div class="equipment-img-container">
+                            <img src="images/image_2.jpg" alt="Mobile UNIC boom crane truck and service pickups in Al Tamam yard" class="equipment-img" loading="lazy">
+                            <span class="equipment-badge">Logistics</span>
+                        </div>
+                        <div class="equipment-body">
+                            <div class="equipment-category">Logistics & Machinery</div>
+                            <h3 class="equipment-title">Mobile Telescopic Boom Crane Fleet</h3>
+                            <p class="equipment-desc">
+                                Specialized crane-mounted trucks (Mitsubishi Fuso with UNIC telescopic cranes) for self-loading, rapid transport, and safe on-site positioning of heavy machinery and portacabins.
+                            </p>
+                            <div class="equipment-specs-grid">
+                                <div class="spec-chip"><strong>Crane:</strong> UNIC Telescopic</div>
+                                <div class="spec-chip"><strong>Capacity:</strong> 5 – 10 Ton Boom</div>
+                                <div class="spec-chip"><strong>Crew:</strong> Certified Riggers</div>
+                                <div class="spec-chip"><strong>Reach:</strong> Up to 14.5m</div>
+                            </div>
+                            <div class="equipment-actions">
+                                <button class="btn btn-primary btn-block open-quote-btn" data-equipment="Mobile Telescopic Boom Crane Truck">Rent Logistics Unit</button>
+                                <button class="btn btn-outline-sm view-spec-btn" data-title="Mobile Telescopic Boom Crane Fleet" data-spec="Truck Chassis: Mitsubishi Fuso Heavy-Duty&#10;Crane Unit: UNIC Multi-Stage Telescopic Boom&#10;Lifting Capacity: 5.0 to 10.0 Tons at radius&#10;Deck Space: Accommodates large canopied units&#10;Safety: Outriggers, Load Moment Indicator">Specs</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unit 4: Control Module & Calibration Diagnostics -->
+                    <div class="equipment-card" data-category="diagnostics">
+                        <div class="equipment-img-container">
+                            <img src="images/image_4.jpg" alt="Engineers performing laptop diagnostic calibration on Deep Sea controller" class="equipment-img" loading="lazy">
+                            <span class="equipment-badge">Diagnostics</span>
+                        </div>
+                        <div class="equipment-body">
+                            <div class="equipment-category">Diagnostics & Controls</div>
+                            <h3 class="equipment-title">Digital Synchronization & Controller Station</h3>
+                            <p class="equipment-desc">
+                                Advanced Deep Sea Electronics (DSE) digital controllers programmed and monitored via proprietary diagnostic software. Enables parallel load sharing, remote telemetry, and instant fault detection.
+                            </p>
+                            <div class="equipment-specs-grid">
+                                <div class="spec-chip"><strong>Controller:</strong> Deep Sea / ComAp</div>
+                                <div class="spec-chip"><strong>Sync:</strong> Multi-Unit Parallel</div>
+                                <div class="spec-chip"><strong>Telemetry:</strong> 4G Remote Link</div>
+                                <div class="spec-chip"><strong>Protection:</strong> Instant Trip Safety</div>
+                            </div>
+                            <div class="equipment-actions">
+                                <button class="btn btn-primary btn-block open-quote-btn" data-equipment="Digital Synchronization & Controller Package">Inquire System</button>
+                                <button class="btn btn-outline-sm view-spec-btn" data-title="Digital Synchronization & Controller Station" data-spec="System: Deep Sea Electronics 8610 / 7320&#10;Functionality: Automatic Mains Failure & Paralleling&#10;Protection: Over/Under Voltage, Frequency, Reverse Power&#10;Load Balancing: Automated peak-shaving and sharing&#10;Telemetry: GSM/GPS Cloud monitoring available">Specs</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unit 5: Heavy Rigging & Lifting Operations -->
+                    <div class="equipment-card" data-category="logistics">
+                        <div class="equipment-img-container">
+                            <img src="images/image_8.jpg" alt="Certified rigger attaching heavy-duty crane hook to equipment canopy" class="equipment-img" loading="lazy">
+                            <span class="equipment-badge">Rigging Safety</span>
+                        </div>
+                        <div class="equipment-body">
+                            <div class="equipment-category">Logistics & Safety</div>
+                            <h3 class="equipment-title">Certified Heavy Rigging & Placement Service</h3>
+                            <p class="equipment-desc">
+                                Precision rigging hardware, proof-tested wire ropes, safety shackles, and certified lifting personnel for safe equipment placement over parapets, basements, and congested sites.
+                            </p>
+                            <div class="equipment-specs-grid">
+                                <div class="spec-chip"><strong>Standards:</strong> LOLER / OSHA Cert</div>
+                                <div class="spec-chip"><strong>Hardware:</strong> Grade 80 / 100</div>
+                                <div class="spec-chip"><strong>Personnel:</strong> 3rd Party Certified</div>
+                                <div class="spec-chip"><strong>Inspection:</strong> Periodic Load Test</div>
+                            </div>
+                            <div class="equipment-actions">
+                                <button class="btn btn-primary btn-block open-quote-btn" data-equipment="Certified Rigging & Placement Service">Inquire Rigging</button>
+                                <button class="btn btn-outline-sm view-spec-btn" data-title="Certified Heavy Rigging & Placement Service" data-spec="Standards: Fully certified by UAE third-party inspection&#10;Tackle: Heavy-duty proof-tested webbing, chains, shackles&#10;Lifting Capacity: Up to 25 Tons tandem lifts&#10;Safety: Site risk assessments and lift plans included">Specs</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unit 6: Overhaul & Timing Mechanism Rebuild -->
+                    <div class="equipment-card" data-category="overhaul">
+                        <div class="equipment-img-container">
+                            <img src="images/image_7.jpg" alt="Mechanical engineers performing precision timing gear overhaul" class="equipment-img" loading="lazy">
+                            <span class="equipment-badge">Workshop</span>
+                        </div>
+                        <div class="equipment-body">
+                            <div class="equipment-category">Engine Overhaul</div>
+                            <h3 class="equipment-title">Complete Engine Overhaul & Load Testing</h3>
+                            <p class="equipment-desc">
+                                Full rebuild facility executing precision crankshaft alignments, timing gear overhauls, injector calibration, and 100% full-load resistive load bank tests to guarantee zero on-site breakdowns.
+                            </p>
+                            <div class="equipment-specs-grid">
+                                <div class="spec-chip"><strong>Engines:</strong> Perkins / Cummins / CAT</div>
+                                <div class="spec-chip"><strong>Testing:</strong> Resistive Load Bank</div>
+                                <div class="spec-chip"><strong>Spares:</strong> 100% OEM Genuine</div>
+                                <div class="spec-chip"><strong>Warranty:</strong> Performance Assured</div>
+                            </div>
+                            <div class="equipment-actions">
+                                <button class="btn btn-primary btn-block open-quote-btn" data-equipment="Generator Overhaul & Load Bank Testing">Inquire Overhaul</button>
+                                <button class="btn btn-outline-sm view-spec-btn" data-title="Complete Engine Overhaul & Load Testing" data-spec="Scope: Major overhaul, top-end refurbishment&#10;Calibrations: Fuel injection pump & timing clearance&#10;Testing: 2-hour 100% full capacity resistive load bank test&#10;Quality: Tolerance measured to manufacturer micrometer specs">Specs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Excellence & Workshop Capability Banner -->
+        <section class="workshop-showcase">
+            <div class="container">
+                <div class="workshop-banner-card">
+                    <div class="workshop-grid">
+                        <div class="workshop-text">
+                            <div class="section-tag light">IN-HOUSE ENGINEERING FACILITY</div>
+                            <h2 class="workshop-title">Why Al Tamam Equipment Outperforms the Competition</h2>
+                            <p>
+                                Unlike equipment brokers who simply sub-hire units, Al Tamam owns, operates, and maintains an extensive dedicated engineering workshop in the UAE.
+                            </p>
+                            <div class="workshop-checklist">
+                                <div class="check-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#10B981"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Strict 250-Hour Service Cycles:</strong> Engine oil, air cleaners, and fuel filtration replaced systematically.</span>
+                                </div>
+                                <div class="check-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#10B981"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Precision Cylinder Head & Valvetrain Rebuilds:</strong> In-house micrometric adjustments and pressure testing.</span>
+                                </div>
+                                <div class="check-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#10B981"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>Certified Alternator Winding Insulation:</strong> Megger tested to withstand extreme UAE desert temperatures and humidity.</span>
+                                </div>
+                                <div class="check-item">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="#10B981"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                    <span><strong>24/7 Mobile Service Units:</strong> Dispatched immediately with full diagnostics and replacement parts.</span>
+                                </div>
+                            </div>
+                            <div class="workshop-action">
+                                <button class="btn btn-accent open-quote-btn">Speak to an Engineer</button>
+                                <a href="tel:+971501234567" class="btn btn-outline-white">Emergency Hotline: +971 50 123 4567</a>
+                            </div>
+                        </div>
+                        <div class="workshop-visual">
+                            <div class="workshop-img-stack">
+                                <img src="images/image_5.jpg" alt="Technicians inspecting large diesel generator canopy" class="workshop-img-1" loading="lazy">
+                                <img src="images/image_9.jpg" alt="Precision diesel engine cylinder head overhaul" class="workshop-img-2" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries We Serve Section -->
+        <section class="industries" id="industries">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">SECTORS & APPLICATIONS</div>
+                    <h2 class="section-title">Industries We Power Across the UAE</h2>
+                    <p class="section-subtitle">
+                        Delivering heavy-duty equipment and continuous power reliability across critical industry verticals.
+                    </p>
+                </div>
+
+                <div class="industries-grid">
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M19 2H5c-1.1 0-2 .9-2 2v17c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-1.1-.9-2-2-2zm-8 16H7v-2h4v2zm0-4H7v-2h4v2zm0-4H7V8h4v2zm6 8h-4v-2h4v2zm0-4h-4v-2h4v2zm0-4h-4V8h4v2z"/></svg>
+                        </div>
+                        <h3>Building & Infrastructure Construction</h3>
+                        <p>Powering tower cranes, concrete batching plants, passenger hoists, site offices, dewatering pumps, and high-rise construction projects across Dubai and Abu Dhabi.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2c1.1 0 2 .9 2 2v1.1c3.15.56 5.5 3.28 5.5 6.55v4.5l2 2v1H2.5v-1l2-2V11.65c0-3.27 2.35-5.99 5.5-6.55V4c0-1.1.9-2 2-2zm0 19c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2z"/></svg>
+                        </div>
+                        <h3>Oil, Gas & Petrochemical</h3>
+                        <p>Rig-safe generators, explosion-proof accessories, spark arrestors, and high-pressure compressors tailored for remote desert drilling sites, refineries, and shutdown operations.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M20 21c-1.39 0-2.78-.47-4-1.32-2.44 1.71-5.56 1.71-8 0C6.78 20.53 5.39 21 4 21H2v2h2c1.38 0 2.74-.35 4-.99 2.52 1.29 5.48 1.29 8 0 1.26.65 2.62.99 4 .99h2v-2h-2zM3.95 19H4c1.6 0 3.02-.88 4-2 .98 1.12 2.4 2 4 2s3.02-.88 4-2c.98 1.12 2.4 2 4 2h.05l1.89-6.68c.08-.26.06-.54-.06-.78s-.33-.41-.6-.47L20 11V4c0-1.1-.9-2-2-2h-3V1h-2v1h-2V1H9v1H6c-1.1 0-2 .9-2 2v7l-1.28.27c-.27.06-.48.23-.6.47s-.14.52-.06.78L3.95 19zM6 4h12v6.62l-6-1.27-6 1.27V4z"/></svg>
+                        </div>
+                        <h3>Marine, Ports & Shipyards</h3>
+                        <p>Dry dock overhaul power, shore-to-ship auxiliary electricity, sea-freight cooling, abrasive blasting compressors, and dewatering pumps for coastal operations in Fujairah and JAFZA.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                        </div>
+                        <h3>Major Events & Entertainment</h3>
+                        <p>Ultra-quiet broadcast-quality generators for outdoor concerts, sports tournaments, exhibition tents, temporary film sets, VIP ablution units, and event climate control.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M22 10v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2h3V4c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v4h3c1.1 0 2 .9 2 2zm-5-6H9v4h8V4zm3 6H4v10h16V10zm-6 2h4v2h-4v-2zm-6 0h4v2H8v-2zm-2 4h4v2H6v-2zm6 0h4v2h-4v-2z"/></svg>
+                        </div>
+                        <h3>Manufacturing & Industrial Plants</h3>
+                        <p>Peak-shaving support, emergency power during grid maintenance, continuous process cooling, factory expansion setups, and reliable backup power for sensitive electronics.</p>
+                    </div>
+
+                    <div class="industry-card">
+                        <div class="industry-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 3L2 12h3v8h14v-8h3L12 3zm0 4.7l4 3.6V18h-2v-4H10v4H8v-6.7l4-3.6z"/></svg>
+                        </div>
+                        <h3>Modular Facilities & Portacabins</h3>
+                        <p>Turnkey power and utility connection for temporary site offices, security accommodation units, labor camps, mess halls, and sanitation modular cabins across project sites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us" id="why-us">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">THE AL TAMAM ADVANTAGE</div>
+                    <h2 class="section-title">Why Industry Leaders Choose Al Tamam</h2>
+                    <p class="section-subtitle">
+                        Built on reliability, uncompromised safety, and complete customer dedication.
+                    </p>
+                </div>
+
+                <div class="why-us-grid">
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/></svg>
+                        </div>
+                        <h3>24/7 Field Support & Rapid Dispatch</h3>
+                        <p>Our dedicated mobile mechanics are available around the clock to ensure instantaneous on-site troubleshooting and parts replacement.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                        </div>
+                        <h3>100% Tested Prior to Delivery</h3>
+                        <p>No unexpected failures. Every single generator and compressor undergoes full-load testing on our workshop load bank before dispatch.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+                        </div>
+                        <h3>Flexible & Cost-Effective Terms</h3>
+                        <p>Tailored rental terms designed around your schedule—daily, weekly, monthly, or multi-year contracts with competitive all-inclusive pricing.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <h3>Extensive UAE-Wide Coverage</h3>
+                        <p>From Abu Dhabi, Dubai, Sharjah to Ajman, Ras Al Khaimah, and Fujairah, we maintain prompt delivery and support across every emirate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">HELP & INFORMATION</div>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Common queries regarding our equipment rental terms and procedures.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What generator capacities do you have available for rent?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We stock diesel generators ranging from 20 kVA all the way up to 2000 kVA in single units. For larger mega-power requirements, our units are equipped with Deep Sea auto-synchronizing controllers, allowing us to connect multiple generators in parallel to deliver 5 MW to 10 MW+ continuous power.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How quickly can you deliver and mobilize equipment to our site?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>For urgent requirements within Dubai, Sharjah, and Abu Dhabi, our fleet can mobilize within 2 to 4 hours. Scheduled deliveries can be synchronized to your exact timetable 24 hours a day, including weekends and public holidays.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you provide full fuel management and bulk storage tanks?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. We offer turnkey fuel management solutions including cylindrical double-bunded fuel storage tanks (1,000L to 10,000L), automatic fuel transfer pumps, and scheduled diesel replenishment to guarantee that your operations never run dry.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What happens if an unexpected breakdown occurs on site?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our 24/7 dedicated mobile emergency service teams are stationed across the UAE. If an issue occurs, our on-call technicians are dispatched immediately with replacement components. If an issue cannot be resolved rapidly, we provide an immediate replacement unit from our yard.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do your rental terms include cables, distribution panels, and operators?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer fully bespoke packages. You can rent bare machinery or complete turnkey packages including certified electrical cables, distribution boards, ATS / AMF synchronizing panels, and full-time certified on-site generator operators.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Request a Quote & Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card">
+                        <div class="section-tag">QUICK INQUIRY</div>
+                        <h2 class="form-title">Request a Free Equipment Quote</h2>
+                        <p class="form-desc">Fill out the form below and our technical rental managers will provide a tailored proposal within 30 minutes.</p>
+
+                        <form id="quoteForm" class="quote-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="e.g. Ahmed Al Mansoori" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="companyName">Company / Project Name</label>
+                                    <input type="text" id="companyName" name="companyName" placeholder="e.g. Gulf Contracting LLC">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone / WhatsApp *</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+971 50 123 4567" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" placeholder="name@company.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="equipmentSelect">Equipment Required *</label>
+                                    <select id="equipmentSelect" name="equipmentSelect" required>
+                                        <option value="">Select Equipment Type</option>
+                                        <option value="Diesel Generator (20 - 100 kVA)">Diesel Generator (20 - 100 kVA)</option>
+                                        <option value="Diesel Generator (150 - 500 kVA)">Diesel Generator (150 - 500 kVA)</option>
+                                        <option value="Diesel Generator (600 - 2000 kVA)">Diesel Generator (600 - 2000 kVA)</option>
+                                        <option value="Synchronized Mega-Watt Power Package">Synchronized Mega-Watt Power Package</option>
+                                        <option value="Industrial Air Compressor (185 - 900+ CFM)">Industrial Air Compressor (185 - 900+ CFM)</option>
+                                        <option value="Mobile LED Lighting Towers">Mobile LED Lighting Towers</option>
+                                        <option value="Boom Crane Truck & Logistics">Boom Crane Truck & Logistics</option>
+                                        <option value="External Fuel Storage Tank & Fuel Supply">External Fuel Storage Tank & Fuel Supply</option>
+                                        <option value="Other Site Equipment">Other Site Equipment</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="locationSelect">Project Location (Emirate) *</label>
+                                    <select id="locationSelect" name="locationSelect" required>
+                                        <option value="">Select UAE Location</option>
+                                        <option value="Dubai">Dubai</option>
+                                        <option value="Abu Dhabi">Abu Dhabi</option>
+                                        <option value="Sharjah">Sharjah</option>
+                                        <option value="Ajman">Ajman</option>
+                                        <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                                        <option value="Fujairah">Fujairah</option>
+                                        <option value="Umm Al Quwain">Umm Al Quwain</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="rentalDuration">Estimated Rental Duration</label>
+                                    <select id="rentalDuration" name="rentalDuration">
+                                        <option value="Daily">Daily Rental</option>
+                                        <option value="Weekly">Weekly Rental</option>
+                                        <option value="Monthly" selected>Monthly Rental (1 - 6 Months)</option>
+                                        <option value="Long Term">Long-Term Contract (6+ Months)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="startDate">Required Start Date</label>
+                                    <input type="date" id="startDate" name="startDate">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Details / Requirements</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Specify required kVA capacity, fuel requirements, cable lengths, or special site conditions..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-block" id="submitQuoteBtn">Submit Rental Request</button>
+                            <div class="form-feedback" id="formFeedback"></div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info & Direct Links Card -->
+                    <div class="contact-info-card">
+                        <div class="section-tag light">DIRECT CONTACT</div>
+                        <h2 class="contact-card-title">Connect with Al Tamam</h2>
+                        <p class="contact-card-desc">Need immediate equipment or emergency power restoration? Call our 24/7 technical operations desk right away.</p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>24/7 Emergency Dispatch</h4>
+                                    <a href="tel:+971501234567" class="contact-val">+971 50 123 4567</a>
+                                    <span class="contact-note">Round-the-clock emergency support</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Email Inquiries</h4>
+                                    <a href="mailto:info@altamamrental.com" class="contact-val">info@altamamrental.com</a>
+                                    <a href="mailto:sales@altamamrental.com" class="contact-val">sales@altamamrental.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                </div>
+                                <div>
+                                    <h4>Main Yard & Offices</h4>
+                                    <p class="contact-val-text">Industrial Area, Dubai, United Arab Emirates</p>
+                                    <span class="contact-note">Branches & storage yards serving all UAE emirates</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-callout">
+                            <h4>Instant WhatsApp Support</h4>
+                            <p>Chat directly with our plant coordinators for fast pricing and machine availability.</p>
+                            <a href="https://wa.me/971501234567?text=Hello%20Al%20Tamam%20Rental%2C%20I%20need%20a%20quote%20for%20equipment" target="_blank" class="btn btn-whatsapp btn-block">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.192 8.192 0 0 1-5.82 2.41c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.11.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/></svg>
+                                Start WhatsApp Conversation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand Info -->
+                <div class="footer-col brand-col">
+                    <div class="brand-logo footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="#F59E0B">
+                                <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title white-text">AL TAMAM</span>
+                            <span class="logo-subtitle">EQUIPMENT RENTAL</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Al Tamam Equipment Rental is a premier provider of heavy equipment, portable silent generators, industrial air compressors, and turnkey site machinery across Dubai, Abu Dhabi, and the United Arab Emirates.
+                    </p>
+                    <div class="footer-contact-item">
+                        <strong>24/7 Hotline:</strong> <a href="tel:+971501234567">+971 50 123 4567</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong>Email:</strong> <a href="mailto:info@altamamrental.com">info@altamamrental.com</a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Equipment Rental Fleet -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Rental Fleet</h4>
+                    <ul class="footer-links">
+                        <li><a href="#equipment">Diesel Generators (20 - 2000 kVA)</a></li>
+                        <li><a href="#equipment">High-Pressure Air Compressors</a></li>
+                        <li><a href="#equipment">Mobile LED Lighting Towers</a></li>
+                        <li><a href="#equipment">Mobile Boom Crane Trucks</a></li>
+                        <li><a href="#equipment">Auxiliary Fuel Storage Tanks</a></li>
+                        <li><a href="#equipment">Distribution & AMF Panels</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services & Solutions -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Temporary Power Plants</a></li>
+                        <li><a href="#services">Turnkey Fuel Management</a></li>
+                        <li><a href="#services">Heavy Rigging & Offloading</a></li>
+                        <li><a href="#services">24/7 Emergency Breakdown Crew</a></li>
+                        <li><a href="#services">Full Load Bank Testing</a></li>
+                        <li><a href="#services">In-House Engine Overhauls</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Coverage Across UAE -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Service Coverage</h4>
+                    <ul class="footer-links">
+                        <li><span>Dubai (All Industrial & Urban Areas)</span></li>
+                        <li><span>Abu Dhabi & Western Region</span></li>
+                        <li><span>Sharjah & Hamriyah Free Zone</span></li>
+                        <li><span>Ajman & Umm Al Quwain</span></li>
+                        <li><span>Ras Al Khaimah & Fujairah</span></li>
+                    </ul>
+                    <div class="footer-cert-badge">
+                        <span>ISO & HSE Compliant Standards</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Al Tamam Equipment Rental LLC. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#equipment">Fleet</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Interactive Quick Quote Modal -->
+    <div class="modal" id="quoteModal" aria-hidden="true">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <div class="section-tag">FAST INQUIRY</div>
+                <h3 class="modal-title">Get an Instant Equipment Quote</h3>
+                <p class="modal-subtitle">Our equipment coordinators will confirm availability and competitive rental rates within 30 minutes.</p>
+            </div>
+            <form id="modalQuoteForm" class="modal-form">
+                <div class="form-group">
+                    <label for="modalName">Your Name *</label>
+                    <input type="text" id="modalName" required placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <label for="modalPhone">Phone / WhatsApp *</label>
+                    <input type="tel" id="modalPhone" required placeholder="+971 50 123 4567">
+                </div>
+                <div class="form-group">
+                    <label for="modalEmail">Email Address</label>
+                    <input type="email" id="modalEmail" placeholder="name@company.com">
+                </div>
+                <div class="form-group">
+                    <label for="modalEquipment">Equipment Needed *</label>
+                    <select id="modalEquipment" required>
+                        <option value="">Choose Equipment</option>
+                        <option value="Diesel Generator (20 - 250 kVA)">Diesel Generator (20 - 250 kVA)</option>
+                        <option value="Diesel Generator (300 - 1000 kVA)">Diesel Generator (300 - 1000 kVA)</option>
+                        <option value="Multi-Megawatt Power Package">Multi-Megawatt Power Package</option>
+                        <option value="Industrial Air Compressor">Industrial Air Compressor</option>
+                        <option value="Mobile Lighting Tower">Mobile Lighting Tower</option>
+                        <option value="Boom Crane Truck & Logistics">Boom Crane Truck & Logistics</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modalLocation">Location (Emirate) *</label>
+                    <select id="modalLocation" required>
+                        <option value="Dubai">Dubai</option>
+                        <option value="Abu Dhabi">Abu Dhabi</option>
+                        <option value="Sharjah">Sharjah</option>
+                        <option value="Northern Emirates">Northern Emirates</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Quote Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Specifications Detail Modal -->
+    <div class="modal" id="specModal" aria-hidden="true">
+        <div class="modal-backdrop" id="specModalBackdrop"></div>
+        <div class="modal-content spec-modal-content">
+            <button class="modal-close" id="specModalCloseBtn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <div class="section-tag">TECHNICAL SPECIFICATIONS</div>
+                <h3 class="modal-title" id="specModalTitle">Equipment Specifications</h3>
+            </div>
+            <div class="spec-modal-body" id="specModalBody">
+                <!-- Dynamically populated -->
+            </div>
+            <div class="spec-modal-footer">
+                <button class="btn btn-primary open-quote-btn" id="specModalQuoteBtn">Request Rental For This Unit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action WhatsApp Button -->
+    <a href="https://wa.me/971501234567?text=Hello%20Al%20Tamam%20Rental%2C%20I%20am%20interested%20in%20equipment%20rental" class="floating-whatsapp" target="_blank" aria-label="Chat with Al Tamam on WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.28-2.42 5.83a8.192 8.192 0 0 1-5.82 2.41c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.11.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/>
+        </svg>
+    </a>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toastNotification">
+        <span class="toast-message" id="toastMessage">Quote request received! We will contact you shortly.</span>
+    </div>
+
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
 
