@@ -302,13 +302,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalQuoteForm = document.getElementById('modalQuoteForm');
     const formFeedback = document.getElementById('formFeedback');
 
+    const recipientEmail = 'sales@altamamequipmentrental.com';
+
     if (mainQuoteForm) {
         mainQuoteForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const submitBtn = document.getElementById('submitQuoteBtn');
+
+            const name = document.getElementById('fullName')?.value.trim() || '';
+            const company = document.getElementById('companyName')?.value.trim() || '';
+            const phone = document.getElementById('phone')?.value.trim() || '';
+            const email = document.getElementById('email')?.value.trim() || '';
+            const equipment = document.getElementById('equipmentSelect')?.value || '';
+            const location = document.getElementById('locationSelect')?.value || '';
+            const duration = document.getElementById('rentalDuration')?.value || '';
+            const startDate = document.getElementById('startDate')?.value || '';
+            const message = document.getElementById('message')?.value.trim() || '';
+
+            const emailSubject = `Rental Request: ${equipment} - ${name}${company ? ` (${company})` : ''}`;
+            const emailBody = [
+                'New Equipment Rental Request',
+                '=================================',
+                `Customer Name    : ${name}`,
+                `Company / Project: ${company || 'N/A'}`,
+                `Phone / WhatsApp : ${phone}`,
+                `Email Address    : ${email}`,
+                `Equipment Needed : ${equipment}`,
+                `Location (UAE)   : ${location}`,
+                `Rental Duration  : ${duration}`,
+                `Required Start   : ${startDate || 'Immediate / Flexible'}`,
+                `Project Details  : ${message || 'None provided'}`,
+                '=================================',
+                'Sent from Al Tamam Equipment Rental Website'
+            ].join('\n');
+
+            const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
             if (submitBtn) {
                 submitBtn.disabled = true;
-                submitBtn.textContent = 'Processing Request...';
+                submitBtn.textContent = 'Opening Email App...';
             }
 
             setTimeout(() => {
@@ -318,20 +350,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 if (formFeedback) {
                     formFeedback.className = 'form-feedback success';
-                    formFeedback.textContent = '✓ Quote request received! Our equipment manager will contact you within 30 minutes.';
+                    formFeedback.textContent = '✓ Opening your email client to send your quote request to sales@altamamequipmentrental.com.';
                 }
                 mainQuoteForm.reset();
-                showToast('Quote request sent successfully! We will contact you shortly.');
-            }, 800);
+                showToast('Opening your default email app...');
+                window.location.href = mailtoUrl;
+            }, 300);
         });
     }
 
     if (modalQuoteForm) {
         modalQuoteForm.addEventListener('submit', (e) => {
             e.preventDefault();
+
+            const name = document.getElementById('modalName')?.value.trim() || '';
+            const phone = document.getElementById('modalPhone')?.value.trim() || '';
+            const email = document.getElementById('modalEmail')?.value.trim() || '';
+            const equipment = document.getElementById('modalEquipment')?.value || '';
+            const location = document.getElementById('modalLocation')?.value || '';
+
+            const emailSubject = `Quote Request: ${equipment} - ${name}`;
+            const emailBody = [
+                'New Equipment Rental Quote Request',
+                '=================================',
+                `Customer Name    : ${name}`,
+                `Phone / WhatsApp : ${phone}`,
+                `Email Address    : ${email || 'Not provided'}`,
+                `Equipment Needed : ${equipment}`,
+                `Location (UAE)   : ${location}`,
+                '=================================',
+                'Sent from Al Tamam Equipment Rental Website'
+            ].join('\n');
+
+            const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
             closeQuoteModal();
             modalQuoteForm.reset();
-            showToast('Quote inquiry submitted! Our operations desk will call you shortly.');
+            showToast('Opening your default email app...');
+            window.location.href = mailtoUrl;
         });
     }
 
