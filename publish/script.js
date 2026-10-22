@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroSlides = [
         {
             image: 'images/image_1.jpg',
-            title: 'Reliable Heavy Equipment & Temporary Power Solutions',
+            title: 'Reliable Diesel Generators & Temporary Power Solutions',
             desc: 'Supplying heavy-duty soundproof diesel generators (20 kVA to 2000 kVA), industrial air compressors, mobile tower lights, and complete site logistics across the UAE with 24/7 technical field support.'
         },
         {
